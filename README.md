@@ -54,6 +54,7 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --maste
 ```
 Sreenshot of progress reporter:
 ![](images/progress_reporter.png)
+
 Sreenshot of Spark Streaming UI
 ![](images/spark_streaming_UI.png)
 
