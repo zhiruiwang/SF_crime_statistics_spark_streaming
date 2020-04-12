@@ -42,6 +42,7 @@ To see the output, use following command
 kafka-console-consumer --bootstrap-server localhost:9092 --topic org.sf.police.calls --from-beginning
 ```
 Sreenshot of the output:
+
 ![](images/kafka_consumer_console_output.png)
 
 ### Step 2
@@ -53,9 +54,11 @@ Sreenshot of the output:
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py
 ```
 Sreenshot of progress reporter:
+
 ![](images/progress_reporter.png)
 
-Sreenshot of Spark Streaming UI
+Sreenshot of Spark Streaming UI:
+
 ![](images/spark_streaming_UI.png)
 
 
