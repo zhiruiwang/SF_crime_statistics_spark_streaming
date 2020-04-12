@@ -72,4 +72,8 @@ Sreenshot of Spark Streaming UI:
    Increasing each or both of them will increase the throughput as well as the latency of the data.
    
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
-{`maxRatePerPartition`:  500, `maxOffsetsPerTrigger`: 500} is the most efficient pairs. Since there is processing time in the aggregation and joining calculation, we do not want to limit too few data points in one batch since that will cause inefficiency in calcualtion each time. But we also do not want to include too many data points in one batch since the latency of the output will be pretty high. So after testing I find out 500 is a balanced number to use.
+
+  {`maxRatePerPartition`:  500, `maxOffsetsPerTrigger`: 500} is the most efficient pairs. 
+  Since there is processing time in the aggregation and joining calculation, we do not want to limit too few data points in one batch since that will cause inefficiency in calcualtion each time. 
+  But we also do not want to include too many data points in one batch since the latency of the output will be pretty high. 
+  So after testing I find out 500 is a balanced number to use.
